@@ -137,3 +137,24 @@ export const getLinksCountByUserId = query({
     return links.length;
   },
 });
+
+// create link
+export const createLink = mutation({
+  args: {
+    title: v.string(),
+    url: v.string(),
+  },
+  returns: v.id("links"),
+  handler: async ({ db, auth }, args) => {
+    const identity = await auth.getUserIdentity();
+    if (!identity) {
+      throw new Error("Unauthorized");
+    }
+    return await db.insert("links", {
+      userId: identity.subject,
+      title: args.title,
+      url: args.url,
+      order: Date.now(), // use this for sorting by default order by creation time (newest first)
+    });
+  },
+});

@@ -15,7 +15,12 @@ function Links({
   const username = params.username as string;
   const handleLinkClick = (link: Doc<"links">) => {
     // Track the click before navigating to the link
-    // await track
+    await trackLinkClick({
+      profileUsername: username,
+      linkId: link._id,
+      linkTitle: link.title,
+      linkUrl: link.url,
+    });
   };
 
   if (links.length === 0) {

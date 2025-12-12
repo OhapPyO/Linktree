@@ -99,3 +99,28 @@ export const setUsername = mutation({
     return { success: true };
   },
 });
+
+// get user ID by slug/username (fir public page routing)
+export const getUserIdBySlug = query({
+  args: {
+    slug: v.string(),
+  },
+  returns: v.union(v.string(), v.null()),
+  handler: async ({ db }, args) => {
+    // First try to find a custom username
+    const usernameRecord = await db
+      .query("usernames")
+      .withIndex("by_username", (q) => q.eq("username", args.slug))
+      .unique();
+    if (usernameRecord) {
+      return usernameRecord.userId;
+    }
+    // If no custom username, treat slug as potiential cleck ID
+    // we'll need to verify this user actually exists in the database by checking if they have links
+    const links = await db
+      .query("links")
+      .withIndex("by_user_id", (q) => q.eq("userId", args.slug))
+      .first();
+    return links ? args.slug : null;
+  },
+});

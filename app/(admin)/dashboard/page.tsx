@@ -38,7 +38,7 @@ async function DashboardPage() {
 
       {/* manage links section */}
       <div
-        className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100
+        className="min-h-fit bg-gradient-to-br from-gray-50 to-gray-100
        p-4 lg:p-8"
       >
         <div className="max-w-7xl mx-auto">
