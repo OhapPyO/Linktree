@@ -1,0 +1,27 @@
+DESCRIPTION >
+        Materialize daily link perfomance metrics forr faster analytics queries
+
+NODE daily_link_performance_node
+SQL > 
+    %
+    SELECT
+         toDate(timestamp) as date,
+         profileUserId,
+         profileUsername,
+         linkId,
+         linkTitle,
+         linkUrl,
+         sumState(1) as total_clicks,
+         uniqState(profileUserId) as  unique_users,
+         uniqState(location_country) as unique_countries,
+         uniqState(referrer) as unique_referrers,
+         minState(timestamp) as first_click_time,
+         maxState(timestamp) as last_click_time
+
+    FROM link_clicks
+     
+    GROUP BY date, profileUserId, profileUserName, linkId, linkTitle, linkUrl
+ 
+
+TYPE materialized
+DATASOURCE daily_link_performance_materialized

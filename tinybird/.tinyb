@@ -1,14 +1,10 @@
 {
-    "host": "https://api.europe-west2.gcp.tinybird.co",
-    "id": "289d0b50-dbdd-4986-af5a-a56b4460334f",
-    "name": "Soltan",
+    "host": "https://api.europe-west3.gcp.tinybird.co",
+    "id": "d4a8295b-a8af-48ff-bfb1-e5da89e3fa17",
+    "name": "soltan_hossein_workSpace",
     "scope": "user",
-    "token": "p.eyJ1IjogIjI4OWQwYjUwLWRiZGQtNDk4Ni1hZjVhLWE1NmI0NDYwMzM0ZiIsICJpZCI6ICJmNmQzNmYyYy00NTY1LTQ2NTktYThlMC0yYzkxMDk2ZTEzYTYiLCAiaG9zdCI6ICJnY3AtZXVyb3BlLXdlc3QyIn0.a1X8L1njGIe3PHsk63xtP__nJd1x9i2TJ8xby46BMO4",
-    "tokens": {
-        "https://api.europe-west2.gcp.tinybird.co": "p.eyJ1IjogIjI4OWQwYjUwLWRiZGQtNDk4Ni1hZjVhLWE1NmI0NDYwMzM0ZiIsICJpZCI6ICJmNmQzNmYyYy00NTY1LTQ2NTktYThlMC0yYzkxMDk2ZTEzYTYiLCAiaG9zdCI6ICJnY3AtZXVyb3BlLXdlc3QyIn0.a1X8L1njGIe3PHsk63xtP__nJd1x9i2TJ8xby46BMO4"
-    },
+    "tokens": {},
     "user_email": "hossein12.kazemi12@gmail.com",
     "user_id": "99866a54-2608-4d8c-bf84-d7706f144779",
-    "user_token": "p.eyJ1IjogIjk5ODY2YTU0LTI2MDgtNGQ4Yy1iZjg0LWQ3NzA2ZjE0NDc3OSIsICJpZCI6ICI2MmMwY2U5ZS1kY2FiLTQyYjMtODYyNy03ZmQzZGU1ZWU3MDAiLCAiaG9zdCI6ICJnY3AtZXVyb3BlLXdlc3QyIn0.WVVJIaRPqQeXAtVN9NATf6SYhXsgu0_9L3ekGhjid_E",
     "version": "0.0.1.dev324"
 }
