@@ -157,7 +157,7 @@ function SortableItem({ id, link }: { id: Id<"links">; link: Doc<"links"> }) {
               variant="destructive"
               size="icon"
               className="h-8 w-8 "
-              onClick={(e) => {
+              onClick={(e: { stopPropagation: () => void }) => {
                 e.stopPropagation();
                 const confirmed = confirm(
                   `Are you sure you want to delete "${link.title}"?\n\n This action cannot be undone.`,

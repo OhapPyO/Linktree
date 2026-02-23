@@ -17,7 +17,14 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
-      "@clerk/nextjs/server": ["./node_modules/@clerk/nextjs/dist/types/server/index.d.ts"]
+      "@clerk/nextjs": ["./node_modules/@clerk/nextjs/dist/types/index.d.ts"],
+      "@clerk/nextjs/server": ["./node_modules/@clerk/nextjs/dist/types/server/index.d.ts"],
+      "convex/react": ["./node_modules/convex/dist/esm-types/react/index.d.ts"],
+      "convex/nextjs": ["./node_modules/convex/dist/esm-types/nextjs/index.d.ts"],
+      "convex/react-clerk": ["./node_modules/convex/dist/esm-types/react-clerk/index.d.ts"],
+      "sonner": ["./node_modules/sonner/dist/index.d.ts"],
+      "@dnd-kit/sortable": ["./node_modules/@dnd-kit/sortable/dist/index.d.ts"],
+      "@dnd-kit/utilities": ["./node_modules/@dnd-kit/utilities/dist/index.d.ts"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.d.ts", ".next/types/**/*.ts", "types/**/*.d.ts"],
