@@ -4,7 +4,8 @@ DESCRIPTION >
 NODE profile_summary_node
 TYPE endpoint
 SQL >
-    %SELECT 
+    %
+    SELECT
           profileUserId,
           any(profileUsername) as profileUsername,
           count() as total_clicks,

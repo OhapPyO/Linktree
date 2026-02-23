@@ -1,0 +1,5 @@
+{
+    "host": "https://api.europe-west2.gcp.tinybird.co",
+    "user_token": "p.eyJ1IjogIjk5ODY2YTU0LTI2MDgtNGQ4Yy1iZjg0LWQ3NzA2ZjE0NDc3OSIsICJpZCI6ICI2MmMwY2U5ZS1kY2FiLTQyYjMtODYyNy03ZmQzZGU1ZWU3MDAiLCAiaG9zdCI6ICJnY3AtZXVyb3BlLXdlc3QyIn0.WVVJIaRPqQeXAtVN9NATf6SYhXsgu0_9L3ekGhjid_E",
+    "version": "6.1.0"
+}

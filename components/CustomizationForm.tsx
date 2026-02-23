@@ -8,9 +8,7 @@ import { useEffect, useRef, useState, useTransition } from "react";
 import { Label } from "./ui/label";
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { set } from "zod";
 import { toast } from "sonner";
-import { start } from "repl";
 
 function CustomizationForm() {
   const { user } = useUser();

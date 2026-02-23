@@ -1,0 +1,13 @@
+{
+    "host": "https://api.europe-west2.gcp.tinybird.co",
+    "id": "d4a8295b-a8af-48ff-bfb1-e5da89e3fa17",
+    "name": "soltan",
+    "scope": "user",
+    "token": "p.eyJ1IjogImQ0YTgyOTViLWE4YWYtNDhmZi1iZmIxLWU1ZGE4OWUzZmExNyIsICJpZCI6ICIzZjc5N2Y0OC0zNGFlLTRiYmEtYTMyOC02YmJjYTJkNzUxNGYiLCAiaG9zdCI6ICJnY3AtZXVyb3BlLXdlc3QyIn0.ZIPQ1k-kHYf27xOUg9i4UlaE_GJYkVoA9rlgR3kJYGE",
+    "tokens": {
+        "https://api.europe-west2.gcp.tinybird.co": "p.eyJ1IjogImQ0YTgyOTViLWE4YWYtNDhmZi1iZmIxLWU1ZGE4OWUzZmExNyIsICJpZCI6ICIzZjc5N2Y0OC0zNGFlLTRiYmEtYTMyOC02YmJjYTJkNzUxNGYiLCAiaG9zdCI6ICJnY3AtZXVyb3BlLXdlc3QyIn0.ZIPQ1k-kHYf27xOUg9i4UlaE_GJYkVoA9rlgR3kJYGE"
+    },
+    "user_email": "hossein12.kazemi12@gmail.com",
+    "user_id": "99866a54-2608-4d8c-bf84-d7706f144779",
+    "version": "6.1.0"
+}

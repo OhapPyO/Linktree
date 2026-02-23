@@ -17,7 +17,7 @@ import { useMutation } from "convex/react";
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 import { useForm } from "react-hook-form";
-import z, { set } from "zod";
+import { z } from "zod";
 
 const formSchema = z.object({
   title: z

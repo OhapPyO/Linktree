@@ -3,6 +3,8 @@ import { api } from "@/convex/_generated/api";
 import { Doc } from "@/convex/_generated/dataModel";
 import { Preloaded, usePreloadedQuery } from "convex/react";
 import { ArrowRightIcon, ArrowUpRight } from "lucide-react";
+import { trackLinkClick } from "@/lib/analytics";
+
 import Link from "next/link";
 import { useParams } from "next/navigation";
 function Links({
@@ -13,15 +15,14 @@ function Links({
   const links = usePreloadedQuery(preloadedLinks);
   const params = useParams();
   const username = params.username as string;
-  // const handleLinkClick = (link: Doc<"links">) => {
-  //   // Track the click before navigating to the link
-  //   await trackLinkClick({
-  //     profileUsername: username,
-  //     linkId: link._id,
-  //     linkTitle: link.title,
-  //     linkUrl: link.url,
-  //   });
-  // };
+  const handleLinkClick = async (link: Doc<"links">) => {
+    await trackLinkClick({
+      profileUsername: username,
+      linkId: link._id,
+      linkTitle: link.title,
+      linkUrl: link.url,
+    });
+  };
 
   if (links.length === 0) {
     return (
@@ -44,7 +45,7 @@ function Links({
           href={link.url}
           target="_blank"
           className="group  block w-full "
-          // onClick={() => handleLinkClick(link)}
+          onClick={() => handleLinkClick(link)}
         >
           <div
             className="relative bg-white/70 hover:bg-white/90 border border-slate-200/50 

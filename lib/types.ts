@@ -15,5 +15,5 @@ export interface ClientTrackingData {
 export interface ServerTrackingEvent extends ClientTrackingData {
   profileUserId: string;
   timestamp: string;
-  geo: Geo;
+  location: Geo;
 }

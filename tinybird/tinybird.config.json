@@ -1,0 +1,16 @@
+{
+  "include": [
+    "lib/tinybird.ts",
+    "datasources\\daily_link_performance_materialized.datasource",
+    "datasources\\hello_tinybird.datasource",
+    "datasources\\link_clicks.datasource",
+    "materializations\\daily_link_performance.pipe",
+    "pipes\\fast_link_analytics.pipe",
+    "pipes\\link_analytics.pipe",
+    "pipes\\link_country_analytics.pipe",
+    "pipes\\profile_summary.pipe"
+  ],
+  "host": "https://api.europe-west3.gcp.tinybird.co",
+  "baseUrl": "https://api.europe-west3.gcp.tinybird.co",
+  "devMode": "branch"
+}
